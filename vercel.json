@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/market.js": { "maxDuration": 30 }
+  },
+  "rewrites": [
+    { "source": "/api/pairs", "destination": "/api/market?action=pairs" },
+    { "source": "/api/history", "destination": "/api/market?action=history" },
+    { "source": "/api/indicator", "destination": "/api/market?action=indicator" }
+  ]
+}
